@@ -15,7 +15,7 @@ public class Grades2 {
             int choice = sc.nextInt();// we can make it string then try to parse it to avoid errors
             switch(choice){
                 case 1 :
-                    enterScores(); // I think this is the best way
+                    enterScores(); 
                     break;
                 case 2 :
                     findHighestScore();
