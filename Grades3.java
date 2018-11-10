@@ -1,7 +1,4 @@
 import java.util.Scanner;
-
-import com.sun.scenario.effect.light.SpotLight;
-
 public class Grades3 {
     static Scanner sc = new Scanner(System.in);
     static int count;
