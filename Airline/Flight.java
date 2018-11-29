@@ -17,17 +17,17 @@ public class Flight {
     }
 
     public Flight(int destination, String date, int gate, String departure) {
-        Flight.totalFlights++;
         this.destination = destination;
         this.flightNumber = generateFlightNumber();
         this.date = date;
         this.departureTime = departure;
         this.arrivalTime = calculateArrivalTime();
         this.gate = gate;
+        Flight.totalFlights++;
     }
 
     private String generateFlightNumber() {
-        return this.citys[this.destination - 1].substring(0,3) + "00" + Flight.totalFlights;
+        return this.citys[this.destination - 1].substring(0,3) + "00" + (Flight.totalFlights + 1);
     }
 
     private String calculateArrivalTime() {

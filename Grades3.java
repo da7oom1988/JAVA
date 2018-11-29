@@ -86,8 +86,8 @@ public class Grades3 {
                 System.out.println("D: 60-69.99");
                 System.out.println("F: below 60\n");
 
-                if (count <= 0)
-                    return;
+                if (count < 1)
+                    System.out.println("You need to enter grades first..\n");
                 for (int i = 0; i < count; i++) {
                     if (grades[i] >= 90)
                         System.out.println("A");
