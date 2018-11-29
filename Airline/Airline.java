@@ -92,7 +92,6 @@ public class Airline {
       int destination, gate;
       String date, departure;
 
-      try{
          printDestination();
          System.out.print("destination(1-7): ");
          destination = sc.nextInt();
@@ -118,10 +117,6 @@ public class Airline {
       
          flights[getNumberOfFlights()] = new Flight(destination, date, gate, departure);
          return true;
-      }catch(Exception e){
-         System.out.println("Can't add the flight..");
-         return false;
-      }
    }
 
    private static int findFlight(String flightNumber) {
